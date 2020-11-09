@@ -1,0 +1,25 @@
+<h2 style="color: white;">Trainer List</h2>
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th>Trainer Name</th>
+            <th>Type</th>
+            <th>Qualification</th>
+            <th>Actions</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let trainer of trainers">
+            <td>{{ trainer.trainerName }}</td>
+            <td>{{ trainer.trainerType }}</td>
+            <td>{{ trainer.trainerQualification }}</td>
+            <td>
+                <button (click)="updateTrainer(trainer.trainerId)" class="btn btn-warning" >Update</button>
+                <button (click)="deleteTrainer(trainer.trainerId)" class="btn btn-danger" style="margin-left:10px;" >Delete</button>
+            </td>
+            
+            
+        </tr>
+    </tbody>
+</table>

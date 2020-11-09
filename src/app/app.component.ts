@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'IFS-Application-Test1-Angular';
+  title = 'IFS Training Scheduler';
 }
